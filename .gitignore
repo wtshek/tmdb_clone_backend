@@ -37,3 +37,6 @@ lerna-debug.log*
 
 # Environmental variable
 .env
+
+# dev database
+/dev.db

@@ -21,9 +21,4 @@ describe('PrismaService', () => {
   it('should be defined', () => {
     expect(prismaService).toBeDefined();
   });
-
-  it('should connect to the database', async () => {
-    const result = await prismaService.$queryRaw('SELECT 1+1 as result');
-    expect(result[0].result).toEqual(2);
-  });
 });

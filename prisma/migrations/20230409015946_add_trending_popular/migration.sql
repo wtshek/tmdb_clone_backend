@@ -1,0 +1,23 @@
+-- CreateTable
+CREATE TABLE "TrendingMovie" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "TrendingMovie_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "TrendingTV" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "TrendingTV_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "PopularTV" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "PopularTV_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "PopularMovie" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "PopularMovie_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);

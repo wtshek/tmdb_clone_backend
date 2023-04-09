@@ -1,11 +1,36 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { DatabaseService } from './database.service';
+import { DatabaseService, NUM_OF_ASSETS } from './database.service';
 import { PrismaService } from '../prisma/prisma.service';
-import { mockPanelData } from '../data/panel';
+import { Asset, Availability, MediaType, TimeWindow } from '../utils/type';
+
+jest.mock('@prisma/client', () => {
+  const mockedPrisma = {
+    asset: {
+      findMany: jest.fn(),
+      create: jest.fn(),
+      count: jest.fn(),
+    },
+    trendingMovie: {
+      findMany: jest.fn(),
+      create: jest.fn(),
+      count: jest.fn(),
+    },
+    trendingTV: {
+      findMany: jest.fn(),
+      create: jest.fn(),
+      count: jest.fn(),
+    },
+    $connect: jest.fn(),
+    $disconnect: jest.fn(),
+  };
+
+  return { PrismaClient: jest.fn(() => mockedPrisma) };
+});
 
 describe('DatabaseService', () => {
   let databaseService: DatabaseService;
   let prismaService: PrismaService;
+  const inputArray = [1, 2, 3, 4, 5];
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -16,56 +41,90 @@ describe('DatabaseService', () => {
     prismaService = module.get<PrismaService>(PrismaService);
   });
 
-  afterEach(async () => {
-    // Delete all assets in the database after each test
-    await prismaService.asset.deleteMany({});
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
-  it('should initialize the database with test data in development mode when the database is empty', async () => {
-    // Set the NODE_ENV environment variable to 'development'
-    process.env.NODE_ENV = 'development';
-
-    // Call the init() method of the DatabaseService
-    await databaseService.init();
-
-    // Verify that the test data has been added to the database
-    const assets = await prismaService.asset.findMany({});
-    expect(assets.length).toBe(mockPanelData.length);
+  it('should return an array with the specified number of elements', () => {
+    const result = databaseService['getRandomElements'](inputArray, 3);
+    expect(result.length).toBe(3);
   });
 
-  it('should not initialize the database when not in development mode', async () => {
-    // Set the NODE_ENV environment variable to 'production'
-    process.env.NODE_ENV = 'production';
-
-    // Call the init() method of the DatabaseService
-    await databaseService.init();
-
-    // Verify that the database is empty
-    const assets = await prismaService.asset.findMany({});
-    expect(assets.length).toBe(0);
+  it('should return an empty array when the input array is empty', () => {
+    const result = databaseService['getRandomElements']([], 5);
+    expect(result.length).toBe(0);
   });
 
-  it('should not initialize the database when in development mode but the database already contains data', async () => {
-    // Set the NODE_ENV environment variable to 'development'
-    process.env.NODE_ENV = 'development';
+  it('should return the entire array when the number of elements requested is greater than the length of the array', () => {
+    const result = databaseService['getRandomElements'](inputArray, 10);
+    expect(result.length).toBe(inputArray.length);
+    expect(result).toEqual(expect.arrayContaining(inputArray));
+  });
 
-    // Insert some data into the database before calling init()
-    await prismaService.asset.create({
-      data: {
-        title: 'Test Asset',
+  it('should initialize the database with random assets if the database is empty', async () => {
+    // Mock the getRandomDatabase function to return an array of 2 assets
+    const mockAssets: Asset[] = [
+      {
+        id: 1,
+        title: 'Mock Asset 1',
         tmdb_id: '123',
-        media_type: 'movie',
-        image: '/path/to/image',
-        time_window: 'today',
-        available: 'on_tv',
+        media_type: MediaType.Movie,
+        image: '/path/to/image1',
+        time_window: TimeWindow.Today,
+        available: Availability.OnTv,
+      },
+      {
+        id: 2,
+        title: 'Mock Asset 2',
+        tmdb_id: '456',
+        media_type: MediaType.Movie,
+        image: '/path/to/image2',
+        time_window: TimeWindow.Today,
+        available: Availability.OnTv,
+      },
+    ];
+    databaseService['getRandomDatabase'] = jest
+      .fn()
+      .mockResolvedValue(mockAssets);
+
+    await databaseService['initializeDatabase'](
+      'Test Database',
+      async () => await Promise.resolve(0),
+      async (assetId: number) =>
+        await prismaService.trendingMovie.create({
+          data: {
+            assetId: assetId,
+          },
+        }),
+      MediaType.Movie,
+    );
+
+    expect(prismaService.trendingMovie.create).toHaveBeenCalledTimes(2);
+    expect(prismaService.trendingMovie.create).toHaveBeenCalledWith({
+      data: {
+        assetId: 1,
       },
     });
+    expect(prismaService.trendingMovie.create).toHaveBeenCalledWith({
+      data: {
+        assetId: 2,
+      },
+    });
+  });
 
-    // Call the init() method of the DatabaseService
-    await databaseService.init();
+  it('should not initialize the database if the database is not empty', async () => {
+    await databaseService['initializeDatabase'](
+      'Test Database',
+      async () => await Promise.resolve(20),
+      (assetId: number) =>
+        prismaService.trendingMovie.create({
+          data: {
+            assetId: assetId,
+          },
+        }),
+      MediaType.Movie,
+    );
 
-    // Verify that the database still contains only one asset
-    const assets = await prismaService.asset.findMany({});
-    expect(assets.length).toBe(1);
+    expect(prismaService.trendingMovie.create).not.toHaveBeenCalled();
   });
 });

@@ -1,14 +1,14 @@
-enum MediaType {
+export enum MediaType {
   Movie = 'movie',
   TV = 'tv',
 }
 
-enum TimeWindow {
+export enum TimeWindow {
   Today = 'today',
   Week = 'this-week',
 }
 
-enum Availability {
+export enum Availability {
   ForRents = 'for_rents',
   OnTv = 'on_tv',
   InTheaters = 'in_theaters',

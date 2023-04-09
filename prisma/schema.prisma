@@ -11,12 +11,34 @@ datasource db {
 }
 
 model Asset {
-   id Int @id @default(autoincrement())
-   title String
-   tmdb_id String
-   media_type String
-   image String
-   time_window String
-   available String
+  id            Int             @id @default(autoincrement())
+  title         String
+  tmdb_id       String
+  media_type    String
+  image         String
+  time_window   String
+  available     String
+  trendingMovie TrendingMovie?
+  trendingTV TrendingTV?
+  popularTV PopularTV?
+  popularMovie PopularMovie?
+}
+
+model TrendingMovie {
+  assetId Int    @id
+  asset   Asset  @relation(fields: [assetId], references: [id])
+}
+
+model TrendingTV {
+  assetId Int    @id
+  asset   Asset  @relation(fields: [assetId], references: [id])
+}
+model PopularTV {
+  assetId Int    @id
+  asset   Asset  @relation(fields: [assetId], references: [id])
+}
+model PopularMovie {
+  assetId Int    @id
+  asset   Asset  @relation(fields: [assetId], references: [id])
 }
 

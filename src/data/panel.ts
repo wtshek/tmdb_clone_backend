@@ -1,4 +1,4 @@
-export const mockPanelData = [
+export const mockAssetData = [
   {
     title: 'Bandit',
     tmdb_id: '842942',
