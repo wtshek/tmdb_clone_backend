@@ -12,7 +12,7 @@ export class DatabaseService {
   constructor(private readonly prisma: PrismaService) {}
 
   // Helper function to get random elements from an array
-  private getRandomElements<T>(array: T[], numElements: number): T[] {
+  private getRandomElements(array: unknown[], numElements: number): unknown[] {
     const shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, numElements);
   }
@@ -21,13 +21,15 @@ export class DatabaseService {
     databaseName: string,
     countFunc: () => Promise<number>,
     createFunc: (assetId: number) => Promise<any>,
-    mediaType: MediaType,
+    mediaType?: MediaType,
   ) {
     const count = await countFunc();
     const isEmpty = count === 0;
 
     if (isEmpty) {
-      const selectedAssets = await this.getRandomDatabase(mediaType);
+      const selectedAssets = (await this.getRandomDatabase(
+        mediaType,
+      )) as Asset[];
       for (const asset of selectedAssets) {
         await createFunc(asset.id);
       }
@@ -38,12 +40,12 @@ export class DatabaseService {
     }
   }
 
-  private async getRandomDatabase(type: MediaType): Promise<Asset[]> {
+  private async getRandomDatabase(type?: MediaType): Promise<unknown[]> {
     const assets = await this.prisma.asset.findMany({
       where: { media_type: type },
     });
     const numToCreate = Math.min(NUM_OF_ASSETS, assets.length); // Create up to 20 random assets, so can paginate
-    return this.getRandomElements<Asset>(assets as Asset[], numToCreate);
+    return this.getRandomElements(assets, numToCreate);
   }
 
   async init() {
@@ -53,6 +55,7 @@ export class DatabaseService {
     // Initialize asset database
     const initializeAssetDatabase = async () => {
       const count = await this.prisma.asset.count();
+
       const isEmpty = count === 0;
 
       if (isDev && isEmpty) {
@@ -72,7 +75,7 @@ export class DatabaseService {
       databaseName: string,
       countFunc: () => Promise<number>,
       createFunc: (assetId: number) => Promise<any>,
-      mediaType: MediaType,
+      mediaType?: MediaType,
     ) => {
       await this.initializeDatabase(
         databaseName,
@@ -86,31 +89,43 @@ export class DatabaseService {
       initializeAssetDatabase(),
       initializeDatabase(
         'TrendingTV',
-        async () => await this.prisma.trendingTV.count(),
+        async () => await this.prisma.trendingTV?.count(),
         async (assetId) =>
           await this.prisma.trendingTV.create({ data: { assetId } }),
         MediaType.TV,
       ),
       initializeDatabase(
         'TrendingMovie',
-        async () => await this.prisma.trendingMovie.count(),
+        async () => await this.prisma.trendingMovie?.count(),
         async (assetId) =>
           await this.prisma.trendingMovie.create({ data: { assetId } }),
         MediaType.Movie,
       ),
       initializeDatabase(
         'PopularTV',
-        async () => await this.prisma.popularTV.count(),
+        async () => await this.prisma.popularTV?.count(),
         async (assetId) =>
           await this.prisma.popularTV.create({ data: { assetId } }),
         MediaType.TV,
       ),
       initializeDatabase(
         'PopularMovie',
-        async () => await this.prisma.popularMovie.count(),
+        async () => await this.prisma.popularMovie?.count(),
         async (assetId) =>
           await this.prisma.popularMovie.create({ data: { assetId } }),
         MediaType.Movie,
+      ),
+      initializeDatabase(
+        'Popular',
+        async () => await this.prisma.popular?.count(),
+        async (assetId) =>
+          await this.prisma.popular.create({ data: { assetId } }),
+      ),
+      initializeDatabase(
+        'Trending',
+        async () => await this.prisma.trending?.count(),
+        async (assetId) =>
+          await this.prisma.trending.create({ data: { assetId } }),
       ),
     ]);
   }

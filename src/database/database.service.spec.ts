@@ -63,15 +63,16 @@ describe('DatabaseService', () => {
 
   it('should initialize the database with random assets if the database is empty', async () => {
     // Mock the getRandomDatabase function to return an array of 2 assets
-    const mockAssets: Asset[] = [
+    const mockAssets: unknown[] = [
       {
         id: 1,
         title: 'Mock Asset 1',
         tmdb_id: '123',
         media_type: MediaType.Movie,
         image: '/path/to/image1',
-        time_window: TimeWindow.Today,
         available: Availability.OnTv,
+        created_at: new Date(),
+        updated_at: new Date(),
       },
       {
         id: 2,
@@ -79,8 +80,9 @@ describe('DatabaseService', () => {
         tmdb_id: '456',
         media_type: MediaType.Movie,
         image: '/path/to/image2',
-        time_window: TimeWindow.Today,
         available: Availability.OnTv,
+        created_at: new Date(),
+        updated_at: new Date(),
       },
     ];
     databaseService['getRandomDatabase'] = jest

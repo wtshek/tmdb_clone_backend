@@ -1,0 +1,11 @@
+-- CreateTable
+CREATE TABLE "Trending" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "Trending_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "Popular" (
+    "assetId" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    CONSTRAINT "Popular_assetId_fkey" FOREIGN KEY ("assetId") REFERENCES "Asset" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);

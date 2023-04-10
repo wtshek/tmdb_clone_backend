@@ -4,7 +4,6 @@ export const mockAssetData = [
     tmdb_id: '842942',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/yph9PAbmjYPvyvbeZvdYIhCZHEu.jpg',
-    time_window: 'today',
     available: 'on_tv',
   },
   {
@@ -12,7 +11,6 @@ export const mockAssetData = [
     tmdb_id: '458156',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg',
-    time_window: 'today',
     available: 'in_theaters',
   },
   {
@@ -20,7 +18,6 @@ export const mockAssetData = [
     tmdb_id: '129552',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/xjsx6rGEgHl2tUqkimo6Bz2KzVo.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -28,7 +25,6 @@ export const mockAssetData = [
     tmdb_id: '119051',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/9PFonBhy4cQy7Jz20NpMygczOkv.jpg',
-    time_window: 'today',
     available: 'in_theaters',
   },
   {
@@ -36,7 +32,7 @@ export const mockAssetData = [
     tmdb_id: '1402',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -44,7 +40,6 @@ export const mockAssetData = [
     tmdb_id: '82856',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -52,7 +47,6 @@ export const mockAssetData = [
     tmdb_id: '966',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/5sbMgcbpzZn8aKETeanrKDANzdM.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -60,7 +54,6 @@ export const mockAssetData = [
     tmdb_id: '2224',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/nz5fAg1OomLZ7fxiM4RnLbJxppc.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -68,7 +61,6 @@ export const mockAssetData = [
     tmdb_id: '324552',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg',
-    time_window: 'today',
     available: 'in_theaters',
   },
   {
@@ -76,7 +68,6 @@ export const mockAssetData = [
     tmdb_id: '100088',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -84,7 +75,6 @@ export const mockAssetData = [
     tmdb_id: '121745',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/g18jnJuhIujMYErHqeG5t8U5F9X.jpg',
-    time_window: 'today',
     available: 'in_theaters',
   },
   {
@@ -92,7 +82,6 @@ export const mockAssetData = [
     tmdb_id: '2734',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/ywBt4WKADdMVgxTR1rS2uFwMYTH.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -100,7 +89,6 @@ export const mockAssetData = [
     tmdb_id: '245891',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/nCzzQKGijVzfGFg42tmdb_id7uDLOjY5.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -108,7 +96,6 @@ export const mockAssetData = [
     tmdb_id: '60735',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/rg8N7x27Ef6PvlIiioLStf9ZaIO.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -116,7 +103,6 @@ export const mockAssetData = [
     tmdb_id: '157059',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/sSRFeVwpyUffmqvreVbbNILHYbY.jpg',
-    time_window: 'today',
     available: 'on_tv',
   },
   {
@@ -124,7 +110,6 @@ export const mockAssetData = [
     tmdb_id: '1077280',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/1EnBjTJ5utgT1OXYBZ8YwByRCzP.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -132,7 +117,6 @@ export const mockAssetData = [
     tmdb_id: '60625',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -140,7 +124,6 @@ export const mockAssetData = [
     tmdb_id: '63174',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/ekZobS8isE6mA53RAiGDG93hBxL.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -148,7 +131,6 @@ export const mockAssetData = [
     tmdb_id: '943822',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/x3PIk93PTbxT88ohfeb26L1VpZw.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -156,7 +138,6 @@ export const mockAssetData = [
     tmdb_id: '635302',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -164,7 +145,6 @@ export const mockAssetData = [
     tmdb_id: '505642',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/sv1xJUazXeYqALzczSZ3O6nkH75.jpg',
-    time_window: 'today',
     available: 'in_theaters',
   },
   {
@@ -172,7 +152,6 @@ export const mockAssetData = [
     tmdb_id: '44006',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/iiI1YU8akLYWdWuX1qHuMYPvSHC.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -180,7 +159,7 @@ export const mockAssetData = [
     tmdb_id: '638974',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/5wpVy0KUWzDKDKgrayM0Q8lXOiK.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -188,7 +167,6 @@ export const mockAssetData = [
     tmdb_id: '1622',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg',
-    time_window: 'today',
     available: 'streaming',
   },
   {
@@ -196,7 +174,6 @@ export const mockAssetData = [
     tmdb_id: '456',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/zI3E2a3WYma5w8emI35mgq5Iurx.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -204,7 +181,6 @@ export const mockAssetData = [
     tmdb_id: '19995',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg',
-    time_window: 'today',
     available: 'for_rents',
   },
   {
@@ -212,7 +188,7 @@ export const mockAssetData = [
     tmdb_id: '736526',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/9z4jRr43JdtU66P0iy8h18OyLql.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -220,7 +196,6 @@ export const mockAssetData = [
     tmdb_id: '843794',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/z2nfRxZCGFgAnVhb9pZO87TyTX5.jpg',
-    time_window: 'today',
     available: 'on_tv',
   },
   {
@@ -228,7 +203,6 @@ export const mockAssetData = [
     tmdb_id: '758009',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg',
-    time_window: 'today',
     available: 'on_tv',
   },
   {
@@ -236,7 +210,7 @@ export const mockAssetData = [
     tmdb_id: '1041513',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/sa3Ku5yNVjp8NloWxJoI9dQjvOi.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -244,7 +218,7 @@ export const mockAssetData = [
     tmdb_id: '1416',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/daSFbrt8QCXV2hSwB0hqYjbj681.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -252,7 +226,7 @@ export const mockAssetData = [
     tmdb_id: '615',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/2C9vyK6leWDb2ds65R7uIwSmh8V.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -260,7 +234,7 @@ export const mockAssetData = [
     tmdb_id: '71712',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/luhKkdD80qe62fwop6sdrXK9jUT.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -268,7 +242,7 @@ export const mockAssetData = [
     tmdb_id: '776835',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/cAoAgzOCxSytYBqqCQulhXNR3LB.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -276,7 +250,7 @@ export const mockAssetData = [
     tmdb_id: '985939',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/v28T5F1IygM8vXWZIycfNEm3xcL.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -284,7 +258,7 @@ export const mockAssetData = [
     tmdb_id: '850871',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/aCy61aU7BMG7SfhkaAaasS0KzUO.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -292,7 +266,7 @@ export const mockAssetData = [
     tmdb_id: '2190',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/iiCY2QIGSnmtVktmdb_idjkKAfwDs0KF.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -300,7 +274,7 @@ export const mockAssetData = [
     tmdb_id: '1033219',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/ay8SLFTMKzQ0i5ewOaGHz2bVuZL.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -308,7 +282,7 @@ export const mockAssetData = [
     tmdb_id: '2527',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/ualtuRRNYa9Fj61wSuBVcuvaVDP.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -316,7 +290,7 @@ export const mockAssetData = [
     tmdb_id: '1087040',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/g7fD1EHgctNSjBUzAOfxEsHaB2k.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -324,7 +298,7 @@ export const mockAssetData = [
     tmdb_id: '76600',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -332,7 +306,7 @@ export const mockAssetData = [
     tmdb_id: '958196',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/dXsiWJWwGwYwOQ6DfYFt5pPBMwT.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -340,7 +314,7 @@ export const mockAssetData = [
     tmdb_id: '502356',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -348,7 +322,7 @@ export const mockAssetData = [
     tmdb_id: '726759',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -356,7 +330,7 @@ export const mockAssetData = [
     tmdb_id: '677179',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -364,7 +338,7 @@ export const mockAssetData = [
     tmdb_id: '638974',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/5wpVy0KUWzDKDKgrayM0Q8lXOiK.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -372,7 +346,7 @@ export const mockAssetData = [
     tmdb_id: '82856',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -380,7 +354,7 @@ export const mockAssetData = [
     tmdb_id: '603692',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -388,7 +362,7 @@ export const mockAssetData = [
     tmdb_id: '849869',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -396,7 +370,7 @@ export const mockAssetData = [
     tmdb_id: '493529',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -404,7 +378,7 @@ export const mockAssetData = [
     tmdb_id: '125462',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/z0s0th8B0ccWfQ3bm3bqYnXsGoI.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -412,7 +386,7 @@ export const mockAssetData = [
     tmdb_id: '346698',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/cgYg04miVQUAG2FKk3amSnnHzOp.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -420,7 +394,7 @@ export const mockAssetData = [
     tmdb_id: '964980',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/76AKQPdH3M8cvsFR9K8JsOzVlY5.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -428,7 +402,7 @@ export const mockAssetData = [
     tmdb_id: '203040',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/68rh8l8RaGujTDF6k87yykxixIy.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -436,7 +410,7 @@ export const mockAssetData = [
     tmdb_id: '121183',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/ahL7MXhqvTul41uRrKaxycJhbUQ.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -444,7 +418,7 @@ export const mockAssetData = [
     tmdb_id: '119064',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/1WwKoGbQETx7erXfh5w1OW0BHEC.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -452,7 +426,7 @@ export const mockAssetData = [
     tmdb_id: '739405',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/vQGw9lzfh9hEoYSOWAE5XbZ6J7s.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -460,7 +434,7 @@ export const mockAssetData = [
     tmdb_id: '997317',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/jY092qLqa7qTMelwRiNPpLUolEz.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -468,7 +442,7 @@ export const mockAssetData = [
     tmdb_id: '816904',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -476,7 +450,7 @@ export const mockAssetData = [
     tmdb_id: '83121',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -484,7 +458,7 @@ export const mockAssetData = [
     tmdb_id: '842544',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/bxh5xCCW9Ynfg6EZJWUkc1zqTnr.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -492,7 +466,7 @@ export const mockAssetData = [
     tmdb_id: '9837',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/2xUjYwL6Ol7TLJPPKs7sYW5PWLX.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -500,7 +474,7 @@ export const mockAssetData = [
     tmdb_id: '384018',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -508,7 +482,7 @@ export const mockAssetData = [
     tmdb_id: '220289',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/oWlgqzVPWMpA8QGB8eUQYXXYgr0.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -516,7 +490,7 @@ export const mockAssetData = [
     tmdb_id: '1102843',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/eUHEUEMlk6O0QusTAUji8zq3mwQ.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -524,7 +498,7 @@ export const mockAssetData = [
     tmdb_id: '235260',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/7xWa1p2qMn4rxGIvRDDebJrXMiI.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -532,7 +506,7 @@ export const mockAssetData = [
     tmdb_id: '1607',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -540,7 +514,7 @@ export const mockAssetData = [
     tmdb_id: '846433',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/pXC8JJbfnRWtbD8i2yKFqqWEO4X.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -548,7 +522,7 @@ export const mockAssetData = [
     tmdb_id: '1579',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/cBFQsU1LDBEOl0Ik0cygeB6wCLE.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -556,7 +530,7 @@ export const mockAssetData = [
     tmdb_id: '227859',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/yk8xDUbvnJIElgnkW3YZ3eAwiLO.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -564,7 +538,7 @@ export const mockAssetData = [
     tmdb_id: '325358',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/iuIWl90qCpoxv6g775JB6Kg0m86.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -572,7 +546,7 @@ export const mockAssetData = [
     tmdb_id: '753232',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/mn1GYIQ1tvFuuu0YBNZBvrHyrkO.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -580,7 +554,7 @@ export const mockAssetData = [
     tmdb_id: '7445',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/ySXRgHCdelVtvUyHcKGpiQKb052.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -588,7 +562,7 @@ export const mockAssetData = [
     tmdb_id: '615',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/2C9vyK6leWDb2ds65R7uIwSmh8V.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -596,7 +570,7 @@ export const mockAssetData = [
     tmdb_id: '14836',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/gPMh5rsVrDDAYMDbTcz6Up1DQ4z.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -604,7 +578,7 @@ export const mockAssetData = [
     tmdb_id: '896221',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/z5ge6Cr8lnElNIYU7fn2WoMg7SD.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -612,7 +586,7 @@ export const mockAssetData = [
     tmdb_id: '476299',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/tt9YSQlArAj6849SQQJ5ryNgcJs.jpg',
-    time_window: 'today',
+
     available: 'on_tv',
   },
   {
@@ -620,7 +594,7 @@ export const mockAssetData = [
     tmdb_id: '373571',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/fQ40gmFM4p03tXwMxQQKh2cCBW4.jpg',
-    time_window: 'today',
+
     available: 'streaming',
   },
   {
@@ -628,7 +602,7 @@ export const mockAssetData = [
     tmdb_id: '168259',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/wurKlC3VKUgcfsn0K51MJYEleS2.jpg',
-    time_window: 'today',
+
     available: 'in_theaters',
   },
   {
@@ -636,7 +610,7 @@ export const mockAssetData = [
     tmdb_id: '337339',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg',
-    time_window: 'today',
+
     available: 'for_rents',
   },
   {
@@ -644,7 +618,7 @@ export const mockAssetData = [
     tmdb_id: '76600',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg',
-    time_window: 'this-week',
+
     available: 'in_theaters',
   },
   {
@@ -652,7 +626,7 @@ export const mockAssetData = [
     tmdb_id: '603692',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
   {
@@ -660,7 +634,7 @@ export const mockAssetData = [
     tmdb_id: '677179',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -668,7 +642,7 @@ export const mockAssetData = [
     tmdb_id: '726759',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
   {
@@ -676,7 +650,7 @@ export const mockAssetData = [
     tmdb_id: '638974',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/5wpVy0KUWzDKDKgrayM0Q8lXOiK.jpg',
-    time_window: 'this-week',
+
     available: 'in_theaters',
   },
   {
@@ -684,7 +658,7 @@ export const mockAssetData = [
     tmdb_id: '82856',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
   {
@@ -692,7 +666,7 @@ export const mockAssetData = [
     tmdb_id: '493529',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
   {
@@ -700,7 +674,7 @@ export const mockAssetData = [
     tmdb_id: '100088',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
   {
@@ -708,7 +682,7 @@ export const mockAssetData = [
     tmdb_id: '502356',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -716,7 +690,7 @@ export const mockAssetData = [
     tmdb_id: '739405',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/vQGw9lzfh9hEoYSOWAE5XbZ6J7s.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -724,7 +698,7 @@ export const mockAssetData = [
     tmdb_id: '129552',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/xjsx6rGEgHl2tUqkimo6Bz2KzVo.jpg',
-    time_window: 'this-week',
+
     available: 'streaming',
   },
   {
@@ -732,7 +706,7 @@ export const mockAssetData = [
     tmdb_id: '804150',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg',
-    time_window: 'this-week',
+
     available: 'streaming',
   },
   {
@@ -740,7 +714,7 @@ export const mockAssetData = [
     tmdb_id: '594767',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg',
-    time_window: 'this-week',
+
     available: 'in_theaters',
   },
   {
@@ -748,7 +722,7 @@ export const mockAssetData = [
     tmdb_id: '816904',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -756,7 +730,7 @@ export const mockAssetData = [
     tmdb_id: '545611',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -764,7 +738,7 @@ export const mockAssetData = [
     tmdb_id: '1429',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/sHim6U0ANsbzxcmNRYuIubBVQaz.jpg',
-    time_window: 'this-week',
+
     available: 'in_theaters',
   },
   {
@@ -772,7 +746,7 @@ export const mockAssetData = [
     tmdb_id: '849869',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -780,7 +754,7 @@ export const mockAssetData = [
     tmdb_id: '136283',
     media_type: 'tv',
     image: '/t/p/w220_and_h330_face/6jOpyXVzQyYL4QB12VRpHUxdwg1.jpg',
-    time_window: 'this-week',
+
     available: 'for_rents',
   },
   {
@@ -788,7 +762,7 @@ export const mockAssetData = [
     tmdb_id: '315162',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg',
-    time_window: 'this-week',
+
     available: 'in_theaters',
   },
   {
@@ -796,7 +770,7 @@ export const mockAssetData = [
     tmdb_id: '934433',
     media_type: 'movie',
     image: '/t/p/w220_and_h330_face/aePBN8ffLCHoUXp8lkA5P29CXdx.jpg',
-    time_window: 'this-week',
+
     available: 'on_tv',
   },
 ];
